@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+  matrix-sydent:
+    container_name: matrix-sydent
+    hostname: sydent
+    image: dotwee/matrix-sydent:latest
+    ports:
+      - 9090:9090
+    restart: unless-stopped
+    volumes:
+      - ./data/:/data/
+    environment:
+      - SYDENT_SERVER_NAME=

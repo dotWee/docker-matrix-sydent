@@ -42,5 +42,5 @@ jobs:
             dotwee/matrix-sydent:latest
             ghcr.io/dotwee/matrix-sydent:latest
           labels: |
-            maintainer="Lukas Wolfsteiner <lukas@wolfsteiner.media>"
-            org.opencontainers.image.source="https://github.com/dotWee/docker-matrix-sydent"
+            maintainer = "Lukas Wolfsteiner <lukas@wolfsteiner.media>"
+            org.opencontainers.image.source = "https://github.com/dotWee/docker-matrix-sydent"

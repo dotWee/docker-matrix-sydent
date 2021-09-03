@@ -1,9 +1,5 @@
 name: manual-docker-build-push
 on:
-  schedule:
-    - cron: '0 0 * * *'
-  push:
-  
   workflow_dispatch:
     inputs:
       version:

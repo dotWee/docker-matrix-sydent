@@ -36,7 +36,7 @@ jobs:
     needs: validate
     if: needs.validate.outputs.new == 'true'
     steps:
-      - name: Checkout
+      - name: Checkout original sydent source code
         uses: actions/checkout@v2
         with:
           repository: matrix-org/sydent
@@ -74,9 +74,17 @@ jobs:
             ghcr.io/dotwee/matrix-sydent:${{ needs.validate.outputs.version }}
             ghcr.io/dotwee/matrix-sydent:latest
 
+      - name: Checkout this repo into /docs
+        uses: actions/checkout@v2
+        with:
+          repository: dotWee/docker-matrix-sydent
+          path: /docs
+
       - name: Update docker hub repo description
         uses: peter-evans/dockerhub-description@v2
         with:
           username: ${{ secrets.DOCKER_REGISTRY_USERNAME }}
           password: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
           repository: dotwee/matrix-sydent
+          readme-filepath: /docs/README.md
+          short-description: ${{ github.event.repository.description }}

@@ -37,7 +37,7 @@ jobs:
     if: needs.validate.outputs.new == 'true'
     steps:
       - name: Checkout original sydent source code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: matrix-org/sydent
           ref: ${{ needs.validate.outputs.version }}
@@ -75,7 +75,7 @@ jobs:
             ghcr.io/dotwee/matrix-sydent:latest
 
       - name: Checkout this repo into /docs
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: dotWee/docker-matrix-sydent
           path: /docs

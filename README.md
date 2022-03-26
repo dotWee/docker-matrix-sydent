@@ -1,12 +1,9 @@
-# [docker-matrix-sydent](https://github.com/dotWee/docker-matrix-sydent)
+# [`dotwee/matrix-sydent`](https://github.com/dotWee/docker-matrix-sydent)
 
-<a href="https://github.com/dotWee/docker-matrix-sydent/actions/workflows/cron.yml"><img src="https://github.com/dotWee/docker-matrix-sydent/actions/workflows/cron.yml/badge.svg"/></a>
-<a href="https://github.com/dotWee/docker-matrix-sydent/actions"><img src="https://badgen.net/github/checks/dotwee/docker-matrix-sydent?icon=github&label=status"/></a>
-<a href="https://github.com/dotwee/docker-matrix-sydent/blob/master/LICENSE"><img src="https://badgen.net/github/license/dotwee/docker-matrix-sydent?color=cyan&icon=github"/></a>
-<a href="https://github.com/dotwee/docker-matrix-sydent/pulls"><img alt="GitHub pullrequests" src="https://badgen.net/github/prs/dotwee/docker-matrix-sydent?label=pull-requests&icon=github"/></a>
-<a href="https://github.com/dotwee/docker-matrix-sydent/issues"><img src="https://badgen.net/github/issues/dotwee/docker-matrix-sydent?icon=github"/></a>
-<a href="https://cloud.docker.com/u/dotwee/repository/docker/dotwee/matrix-sydent"><img src="https://badgen.net/docker/size/dotwee/matrix-sydent?icon=docker&label=size"/></a>
-<a href="https://cloud.docker.com/u/dotwee/repository/docker/dotwee/matrix-sydent"><img src="https://badgen.net/docker/pulls/dotwee/matrix-sydent?icon=docker&label=pulls"/></a>
+![github status](https://img.shields.io/github/workflow/status/dotwee/docker-matrix-sydent/cron/master?logo=GitHub)
+![github activity](https://img.shields.io/github/last-commit/dotwee/docker-matrix-sydent?logo=github)
+![github open issues](https://badgen.net/github/open-issues/dotwee/docker-matrix-sydent?icon=github)
+![docker pulls](https://badgen.net/docker/pulls/dotwee/matrix-sydent?icon=docker&label=pulls)
 
 this repo is on charge of checking everyday if there is a new [Sydent](https://github.com/matrix-org/sydent/) version and create the proper docker image and push it to the [docker hub](https://hub.docker.com/r/dotwee/matrix-sydent) and [github packages](https://github.com/users/dotWee/packages/container/package/matrix-sydent) as need it.
 
@@ -25,6 +22,11 @@ $ docker pull dotwee/matrix-sydent:latest
 ```bash
 $ docker pull ghcr.io/dotwee/matrix-sydent:latest
 ```
+
+### available tags
+
+- `linux/arm64`
+- `linux/amd64`
 
 ## run
 

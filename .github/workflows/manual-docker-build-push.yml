@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.GH_REGISTRY_TOKEN }}
 
       - name: Build and push
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           platforms: linux/amd64
           build-args: version=latest

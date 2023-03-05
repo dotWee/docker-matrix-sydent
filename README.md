@@ -1,6 +1,6 @@
 # [`dotwee/matrix-sydent`](https://github.com/dotWee/docker-matrix-sydent)
 
-![github status](https://img.shields.io/github/workflow/status/dotwee/docker-matrix-sydent/cron/master?logo=GitHub)
+![github status](https://img.shields.io/github/actions/workflow/status/dotWee/docker-matrix-sydent/cron.yml?branch=master&logo=GitHub)
 ![github activity](https://img.shields.io/github/last-commit/dotwee/docker-matrix-sydent?logo=github)
 ![github open issues](https://badgen.net/github/open-issues/dotwee/docker-matrix-sydent?icon=github)
 ![docker pulls](https://badgen.net/docker/pulls/dotwee/matrix-sydent?icon=docker&label=pulls)

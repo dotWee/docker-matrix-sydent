@@ -73,4 +73,11 @@ jobs:
             dotwee/matrix-sydent:latest
             ghcr.io/dotwee/matrix-sydent:${{ needs.validate.outputs.version }}
             ghcr.io/dotwee/matrix-sydent:latest
-
+            
+      - name: Create a GitHub repository release tag
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          title: ${{ needs.validate.outputs.version }}
+          prerelease: ${{ contains(needs.validate.outputs.version, 'rc') }}
+          automatic_release_tag: ${{ needs.validate.outputs.version }}

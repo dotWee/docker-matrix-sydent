@@ -37,7 +37,7 @@ jobs:
     if: needs.validate.outputs.new == 'true'
     steps:
       - name: Checkout original sydent source code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: matrix-org/sydent
           ref: ${{ needs.validate.outputs.version }}
